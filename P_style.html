@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>公共样式</title>
+    <link href="Public.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="//cdn.txooo.com/public/jquery/jquery-1.7.2.min.js"></script>
+    <style type="text/css">
+        body{padding:40px 0; overflow:initial;}
+        .box{width:772px; margin:0 auto; overflow:hidden;}
+        .line{overflow:hidden; border-bottom:1px solid green; padding:20px 0;}
+        p{display:block; width:100%; line-height:40px; font-size:16px; font-weight:600; overflow:hidden;}
+        b{display:block; float:left; font-weight:normal;}
+        .html{overflow:hidden; line-height:24px;}
+        .html b{font-weight:600;}
+        p span,.html span{color:blue;}
+        p em,.html em{color:red;}
+        p i{color:#006400; font-size:14px; font-weight:normal;}
+        .line_negative_button, .line_positive_button, .positive_button, .negative_button { margin: 0 20px; }
+        .main_table_40 ul li{width:110px;}
+        .main_table_120 ul li{width:110px;}
+        .content{overflow:hidden; margin-bottom:20px;}
+        .radio_box{overflow:hidden;}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="line">
+            <p>输入框 加<span>class</span>="<em>input_text</em>" 提示性文字，标签加<span>class</span>="<em>input_right</em>"</p>
+            <input class="input_text" type="text" value="" />
+            <em class="input_right">提示性文字，放在输入框后面或下面</em>
+        </div>
+        <div class="line">
+            <p>多行文本 加<span>class</span>="<em>textarea</em>"</p>
+            <p>警示性文字，标签加<span>class</span>="<em>right_prompt</em>"</p>
+            <textarea class="textarea"></textarea>
+            <em class="right_prompt">警示性文字，放在后面或下面</em>
+        </div>
+        
+        <div class="line">
+            <p>积极按钮 加<span>class</span>="<em>positive_button</em>"</p>
+            <div class="content">
+                <b>效果：</b>
+                <a class="positive_button" href="javascript:void(0);">确 定</a>
+                <a class="positive_button" href="javascript:void(0);">确定确定</a>
+            </div>
+            <div class="content">
+                <a class="positive_button" href="javascript:void(0);">其他标签，如a，em</a>
+                <input class="positive_button" type="button" value="input标签" />
+                <button class="positive_button">button标签</button>
+            </div>
+        </div>
+        <div class="line">
+            <p>消极按钮 加<span>class</span>="<em>negative_button</em>"</p>
+            <div class="content">
+                <b>效果：</b>
+                <a class="negative_button" href="javascript:void(0);">取 消</a>
+                <a class="negative_button" href="javascript:void(0);">取消取消</a>
+            </div>
+            <div class="content">
+                <a class="negative_button" href="javascript:void(0);">其他标签，如a，em</a>
+                <input class="negative_button" type="button" value="input标签" />
+                <button class="negative_button">button标签</button>
+            </div>
+        </div>
+        <div class="line">
+            <p>行内积极按钮 加<span>class</span>="<em>line_positive_button</em>"</p>
+            <div class="content">
+                <b>效果：</b>
+                <a class="line_positive_button" href="javascript:void(0);">添加图片</a>
+                <a class="line_positive_button" href="javascript:void(0);">确 定</a>
+            </div>
+            <div class="content">
+                <a class="line_positive_button" href="javascript:void(0);">其他标签，如a，em</a>
+                <input class="line_positive_button" type="button" value="input标签" />
+                <button class="line_positive_button">button标签</button>
+            </div>
+        </div>
+        <div class="line">
+            <p>行内消极按钮 加<span>class</span>="<em>line_negative_button</em>"</p>
+            <div class="content">
+                <b>效果：</b>
+                <a class="line_negative_button" href="javascript:void(0);">浏 览</a>
+                <a class="line_negative_button" href="javascript:void(0);">确定确定</a>
+            </div>
+            <div class="content">
+                <a class="line_negative_button" href="javascript:void(0);">其他标签，如a，em</a>
+                <input class="line_negative_button" type="button" value="input标签" />
+                <button class="line_negative_button">button标签</button>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="line">
+            <p>左右结构，默认带下边框</p>
+            <p>dl 加<span>class</span>="<em>main_left_right</em>"</p>
+            <p>dt 加<span>class</span>="<em>main_left_tit</em>" *的标签加<span>class</span>="<em>red</em>"</p>
+            <p>dd 加<span>class</span>="<em>main_right_con</em>"</p>
+            <div>
+                <dl class="main_left_right">
+                    <dt class="main_left_tit">角色名称<em class="red">*</em></dt>
+                    <dd class="main_right_con">
+                        <input class="input_text" type="text" />
+                    </dd>
+                </dl>
+                <dl class="main_left_right">
+                    <dt class="main_left_tit">角色名称<em class="red">*</em></dt>
+                    <dd class="main_right_con">
+                        <textarea class="textarea"></textarea>
+                    </dd>
+                </dl>
+            </div>
+            <p>不要下边框dl 加<span>class</span>="<em>main_left_right no_border</em>"</p>
+            <div>
+                <dl class="main_left_right">
+                    <dt class="main_left_tit">角色名称<em class="red">*</em></dt>
+                    <dd class="main_right_con">
+                        <input class="input_text" type="text" />
+                    </dd>
+                </dl>
+                <dl class="main_left_right no_border">
+                    <dt class="main_left_tit">角色名称<em class="red">*</em></dt>
+                    <dd class="main_right_con">
+                        <textarea class="textarea"></textarea>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="line">
+            <p>表格 高为40&nbsp;&nbsp;<i>/*--宽度在自己的页面加--*/</i></p>
+            <p>外层div加<span>class</span>="<em>main_table_40</em>"</p>
+            <p>标题ul加<span>class</span>="<em>main_table_title</em>"</p>
+            <div class="main_table_40">
+                <ul class="main_table_title">
+                    <li>111</li>
+                    <li>222</li>
+                    <li>333</li>
+                    <li>444</li>
+                    <li>555</li>
+                    <li>666</li>
+                    <li>777</li>
+                </ul>
+                <ul class="main_table_content">
+                    <li>111</li>
+                    <li>222</li>
+                    <li>333</li>
+                    <li>444</li>
+                    <li>555</li>
+                    <li>666</li>
+                    <li>777</li>
+                </ul>
+                <ul class="main_table_content">
+                    <li>111</li>
+                    <li>222</li>
+                    <li>333</li>
+                    <li>444</li>
+                    <li>555</li>
+                    <li>666</li>
+                    <li>777</li>
+                </ul>
+            </div>
+        </div>
+        <div class="line">
+            <p>表格 高为120&nbsp;&nbsp;<i>/*--宽度在自己的页面加--*/</i></p>
+            <p>外层div加<span>class</span>="<em>main_table_120</em>"</p>
+            <p>标题ul加<span>class</span>="<em>main_table_title</em>"</p>
+            <div class="main_table_120">
+                <ul class="main_table_title">
+                    <li>111</li>
+                    <li>222</li>
+                    <li>333</li>
+                    <li>444</li>
+                    <li>555</li>
+                    <li>666</li>
+                    <li>777</li>
+                </ul>
+                <ul class="main_table_content">
+                    <li>111</li>
+                    <li>222</li>
+                    <li>333</li>
+                    <li>444</li>
+                    <li>555</li>
+                    <li>666</li>
+                    <li>777</li>
+                </ul>
+                <ul class="main_table_content">
+                    <li>111</li>
+                    <li>222</li>
+                    <li>333</li>
+                    <li>444</li>
+                    <li>555</li>
+                    <li>666</li>
+                    <li>777</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="line">
+            <p>单选框</p>
+            <p>结构必须是  &lt;em <span>class</span>="<em>radio</em>"&gt;&lt;input <span>type</span>="<em>radio</em>" /&gt;&lt;/em&gt;</p>
+            <p>em加<span>class</span>="<em>radio</em>"</p>
+            <p>如果有一个是初始默认选中，则em加<span>class</span>="<em>radio current</em>"，并在input上加<span>checked</span>="<em>checked</em>"</p>
+            <div class="html"><b>如果有文字，文字加label，em跟label同级，他们的父级加 <span>class</span>="<em>label_radio</em>"，</b>例如： <br />
+            &nbsp;&nbsp;                    &lt;span <span>class</span>="<em>label_radio</em>"&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      &lt;em <span>class</span>="<em>radio current</em>"&gt;&lt;input <span>type</span>="<em>radio</em>" name="du" <span>checked</span>="<em>checked</em>" /&gt;&lt;/em&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      &lt;label&gt;男&lt;/label&gt;<br />
+            &nbsp;&nbsp;                    &lt;/span&gt;
+            </div>
+            <div class="radio_box">
+                <span class="label_radio">
+                    <em class="radio current"><input type="radio" name="du" checked="checked" id="radio_1" /></em>
+                    <label for="radio_1">男</label>
+                </span>
+                <span class="label_radio">
+                    <em class="radio"><input type="radio" name="du" id="radio_2" /></em>
+                    <label for="radio_2">女</label>
+                </span>
+            </div>
+        </div>
+        <div class="line">
+            <p>复选框</p>
+            <p>结构必须是  &lt;em <span>class</span>="<em>checkbox</em>"&gt;&lt;input <span>type</span>="<em>checkbox</em>" /&gt;&lt;/em&gt;</p>
+            <p>label加<span>class</span>="<em>checkbox</em>"</p>
+            <p>如果是初始默认选中，则em加<span>class</span>="<em>checkbox current</em>"，并在input上加<span>checked</span>="<em>checked</em>"</p>
+            <div class="html"><b>如果有文字，文字加label，em跟label同级，他们的父级加 <span>class</span>="<em>label_checkbox</em>"，</b>例如： <br />
+            &nbsp;&nbsp;                    &lt;span <span>class</span>="<em>label_checkbox</em>"&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      &lt;em <span>class</span>="<em>checkbox current</em>"&gt;&lt;input <span>type</span>="<em>checkbox</em>" name="du" <span>checked</span>="<em>checked</em>" /&gt;&lt;/em&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      &lt;label&gt;足球&lt;/label&gt;<br />
+            &nbsp;&nbsp;                    &lt;/span&gt;
+            </div>
+            <div>
+                <span class="label_checkbox">
+                    <em class="checkbox current"><input type="checkbox" checked="checked" name="aa" /></em>
+                    <label>足球</label>
+                </span>
+                <span class="label_checkbox">
+                    <em class="checkbox"><input type="checkbox" name="aa" /></em>
+                    <label>篮球</label>
+                </span>
+                
+            </div>
+        </div>
+        <div class="line">
+            <p>复选框-不可编辑</p>
+            <p>结构必须是  &lt;em <span>class</span>="<em>checkbox</em>"&gt;&lt;input <span>type</span>="<em>checkbox</em>" <span>disabled</span>="<em>disabled</em>" /&gt;&lt;/em&gt;</p>
+            <p>em加<span>class</span>="<em>disabled</em>"</p>
+            <p>如果是初始默认选中，则em加<span>class</span>="<em>disabled current</em>"，并在input上加<span>checked</span>="<em>checked</em> <span>disabled</span>="<em>disabled</em>"</p>
+            <div class="html">例如： <br />
+            &nbsp;&nbsp;                    &lt;span <span>class</span>="<em>label_checkbox</em>"&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      &lt;em <span>class</span>="<em>disabled current</em>"&gt;&lt;input <span>type</span>="<em>checkbox</em>" <span>checked</span>="<em>checked</em>" <span>disabled</span>="<em>disabled</em>" /&gt;&lt;/em&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      &lt;label&gt;足球&lt;/label&gt;<br />
+            &nbsp;&nbsp;                    &lt;/span&gt;
+            </div>
+            <div>
+                <span class="label_checkbox">
+                    <em class="disabled current"><input type="checkbox" checked="checked" disabled="disabled" name="aa" /></em>
+                    <label>男孩</label>
+                </span>
+                <span class="label_checkbox">
+                    <em class="disabled"><input type="checkbox" disabled="disabled" name="aa" /></em>
+                    <label>女孩</label>
+                </span>
+                
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        //表单事件及模拟单/复选框
+        $(function () {
+            //.input_text 文本框获得焦点与失去焦点的事件
+            $(document).delegate(".input_text", "focus", function () {
+                $(this).css({ 'borderColor': '#1d7ad9' });
+            }).delegate(".input_text", "blur", function () {
+                $(this).css({ 'borderColor': '#d7d7d7' });
+            });
+            //.textarea 多行文本框获得焦点与失去焦点的事件
+            $(document).delegate(".textarea", "focus", function () {
+                $(this).css({ 'borderColor': '#1d7ad9' });
+            }).delegate(".textarea", "blur", function () {
+                $(this).css({ 'borderColor': '#d7d7d7' });
+            });
+
+            //遍历所有的单选框，如果他的子元素是选中的就给他加样式，没有选中就去掉样式
+            $('.radio').each(function () {
+                if ($(this).find('input[type=radio]').attr('checked')) {
+                    $(this).addClass('current').parent().siblings().find('.radio').removeClass('current');
+                }
+            });
+
+            //给单选框加单击事件
+            $(document).delegate(".radio", "click", function () {
+                $(this).addClass('current').find('input[type=radio]').attr('checked', true);
+                $(this).parent().siblings().find('.radio').removeClass('current').find('input[type=radio]').attr('checked', false);
+            });
+
+            //遍历所有的复选框，如果他的子元素是选中的就给他加样式，没有选中就去掉样式
+            $('.checkbox').each(function () {
+                if ($(this).find('input[type=checkbox]').attr('checked')) {
+                    $(this).addClass('current');
+                } else {
+                    $(this).removeClass('current');
+                }
+            });
+
+            //给复选框加单击事件
+            $(document).delegate(".checkbox", "mousedown", function () {
+                if ($(this).attr('class').search('current') != -1) {
+                    $(this).removeClass('current').find('input[type=checkbox]').attr('checked', true);
+                } else {
+                    $(this).addClass('current').find('input[type=checkbox]').attr('checked', false);
+                }
+            });
+        })
+    </script>
+</body>
+</html>
